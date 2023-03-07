@@ -15,3 +15,18 @@ To install and run the Image Quality Assessment Tool on your local machine, foll
 1. Clone the repository from GitHub:
 `git clone https://github.com/your_username/your_repository.git`
 
+2. Install the required dependencies:
+`pip install -r requirements.txt`
+
+3. Start the web server:
+`python main.py`
+
+4. Open a web browser!
+
+## Usage
+To use the Image Quality Assessment Tool, follow these steps:
+
+1. Click the "Choose File" button or enter a URL to upload an image.
+2. Click the "Upload" button to analyze the image and get quality scores.
+3. View the quality scores in the report and download the CSV file if desired.
+
