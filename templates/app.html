@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block bodyblock %}
+
+<div class="container">
+    <br><br>
+    <h3 class="display-8">Image Qaulity Assessment Tool</h3>
+
+    <p>
+        <br>
+        The Image Quality Assessment tool is a software program that allows users to upload images and assess their quality based on the 
+        image quality index. The tool is designed to be user-friendly and intuitive, with a simple and intuitive user interface that allows 
+        users to quickly upload their images and obtain quality scores.
+        <br><br>
+
+        The tool uses the OpenCV library to read the images, and calculates the quality index by analyzing the intensity ratio and 
+        texture smoothness ratio of the images. The intensity ratio is calculated by analyzing the contrast between the lightest and 
+        darkest pixels in the image, while the texture smoothness ratio is calculated by analyzing the amount of noise in the image.
+    </p>
+    <img src="/static/images/app_image_quality_assess.jpg" class="image-fluid" width="500" alt="">
+
+    <a class="btn btn-outline-primary" href="/app/tool/">Classical Image Qaulity Assessment Tool</a>
+
+
+</div>
+
+
+{% endblock %}

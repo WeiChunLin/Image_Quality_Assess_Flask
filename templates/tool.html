@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block bodyblock %}
+<!-- 12 --> 
+<div class="container">
+    <div class="row">
+       <div class="col">
+        <br><br>
+             <!-- from: upload the images -->
+             <h3 class="display-8">Classical Image Quality Assessmnet</h3>
+             <p> Upload an image (.jpg, .jpeg, .png, .tmp), The tool will determine the image quality based on the image quality index 
+
+             </p>
+             <!-- upload image form  -->
+             <form action="#" method="POST" enctype="multipart/form-data">
+                <div class="input-group">
+                    <input type="file" class="form-control" name="image_name" required multiple>
+                    <input type="submit" value="upload & predict" class="btn-outline-primary">
+                </div>
+             </form>   
+       </div>
+
+       <div class="col-8">
+            <!-- report: predict image qulaity index -->
+            {% if fileupload %}
+            <!-- predict csv file -->
+            <h3 class="display-8">Output csv File</h3>
+            <div class="download-link">
+                <a href="{{ url_for('download_csv', file_name='image_quality.csv') }}" download>
+                    <img src="/static/images/Download_alt_imh.svg" class="image-fluid" width="75" alt="" style="margin-right: 50px;">
+                    <span>Download CSV</span>
+                    
+                </a>
+
+
+            </div>
+ 
+            <!-- reporting -->
+            <hr>
+            <br>
+            <h3 class="display-8">Image Quality Report</h3>
+            <table class="table table-hover table-striped" style="width:75%">
+
+                <tr>
+                    <th>Image Name</th>
+                    <th>Image Quality Index</th>
+                    <th>Image Quality</th>
+                </tr>
+                {% for i in range(report[0]|length) %}
+                    <tr>
+                        {% for j in range(report|length) %}
+                        <td>{{ report[j][i] }}</td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </table>
+            {% endif %}
+       </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
