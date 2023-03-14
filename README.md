@@ -32,13 +32,6 @@ To use the Image Quality Assessment Tool, follow these steps:
 
 ## Tool demo
 
-<video width="320" height="240" controls>
-  <source src="master/tool demo.mov" type="video/mp4">
-</video>
-
-<video width="320" height="240" controls>
-  <source src="master/tool demo.mov" type="video/quicktime">
-</video>
-
+https://youtu.be/lTbaIEoeL-g
 
 
