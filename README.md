@@ -30,3 +30,8 @@ To use the Image Quality Assessment Tool, follow these steps:
 2. Click the "Upload" button to analyze the image and get quality scores.
 3. View the quality scores in the report and download the CSV file if desired.
 
+<video width="320" height="240" controls>
+  <source src="master/tool demo.mov" type="video/mp4">
+</video>
+
+
